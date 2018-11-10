@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "./components/Button";
+import buttonWrapper from "./HOC/buttonWrapper";
 
 class App extends Component {
   render() {
@@ -11,5 +12,9 @@ class App extends Component {
     );
   }
 }
+
+const Lable = props => (
+  <Lable onMouseOver={props.handleCount}>Current Cout :{props.count}</Lable>
+);
 
 export default App;
